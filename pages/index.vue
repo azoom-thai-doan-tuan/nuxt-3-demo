@@ -48,6 +48,12 @@
     <div class="ng-fm-row">
       <p>Flipcoin X10: {{ result.times10BettingCount.toLocaleString() }}</p>
     </div>
+    <div class="ng-fm-row">
+      <p>LE Dev pool: {{ result.leDevPool.toLocaleString() }}</p>
+    </div>
+    <div class="ng-fm-row">
+      <p>LE treasury pool: {{ result.leTreasuryPool.toLocaleString() }}</p>
+    </div>
   </div>
 </template>
 
