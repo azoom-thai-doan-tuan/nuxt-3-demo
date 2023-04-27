@@ -54,6 +54,9 @@
     <div class="ng-fm-row">
       <p>LE treasury pool: {{ result.leTreasuryPool.toLocaleString() }}</p>
     </div>
+    <div class="ng-fm-row">
+      <p>Checking record: {{ result.needCheckingConvert }}</p>
+    </div>
   </div>
 </template>
 
