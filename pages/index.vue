@@ -21,12 +21,12 @@
     <div class="ng-fm-row">
       <p>Mother trees: {{ result.motherTrees.toLocaleString() }}</p>
     </div>
-    <div class="ng-fm-row">
+    <!-- <div class="ng-fm-row">
       <p>Old plants: {{ result.oldPlants.toLocaleString() }}</p>
     </div>
     <div class="ng-fm-row">
       <p>Old lands: {{ result.oldLands.toLocaleString() }}</p>
-    </div>
+    </div> -->
     <div class="ng-fm-row">
       <p>Remain Free tickets: {{ result.numberOfFreeTicket.toLocaleString() }}</p>
     </div>
