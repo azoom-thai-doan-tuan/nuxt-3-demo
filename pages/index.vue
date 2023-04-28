@@ -28,7 +28,9 @@
       <p>Old lands: {{ result.oldLands.toLocaleString() }}</p>
     </div> -->
     <div class="ng-fm-row">
-      <p>Remain Free tickets: {{ result.numberOfFreeTicket.toLocaleString() }}</p>
+      <p>
+        Remain Free tickets: {{ result.numberOfFreeTicket.toLocaleString() }}
+      </p>
     </div>
     <div class="ng-fm-row">
       <p>LE tickets bought: {{ result.allLeTickets.toLocaleString() }}</p>
@@ -39,6 +41,7 @@
         {{ result.numberOfTicketInRound.toLocaleString() }}
       </p>
     </div>
+    <br />
     <div class="ng-fm-row">
       <p>Flipcoin Win: {{ result.numberOfBettingWin.toLocaleString() }}</p>
     </div>
@@ -49,6 +52,24 @@
       <p>Flipcoin X10: {{ result.times10BettingCount.toLocaleString() }}</p>
     </div>
     <div class="ng-fm-row">
+      <p>
+        Flipcoin Win Total Amount: {{ result.winTotalAmount.toLocaleString() }}
+      </p>
+    </div>
+    <div class="ng-fm-row">
+      <p>
+        Flipcoin Lose Total Amount:
+        {{ result.loseTotalAmount.toLocaleString() }}
+      </p>
+    </div>
+    <div class="ng-fm-row">
+      <p>
+        Average betting amount:
+        {{ result.bettingAmountAverage.toLocaleString() }}
+      </p>
+    </div>
+    <br>
+    <div class="ng-fm-row">
       <p>LE Dev pool: {{ result.leDevPool.toLocaleString() }}</p>
     </div>
     <div class="ng-fm-row">
@@ -56,15 +77,6 @@
     </div>
     <div class="ng-fm-row">
       <p>Checking record: {{ result.needCheckingConvert }}</p>
-    </div>
-    <div class="ng-fm-row">
-      <p>Flipcoin Win Total Amount: {{ result.winTotalAmount.toLocaleString() }}</p>
-    </div>
-    <div class="ng-fm-row">
-      <p>Flipcoin Lose Total Amount: {{ result.loseTotalAmount.toLocaleString() }}</p>
-    </div>
-    <div class="ng-fm-row">
-      <p>Average betting amount: {{ result.bettingAmountAverage.toLocaleString() }}</p>
     </div>
   </div>
 </template>
