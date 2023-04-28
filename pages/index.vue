@@ -6,7 +6,7 @@
     <div class="ng-fm-row">
       <p>Number of plants: {{ result.numberOfPlants.toLocaleString() }}</p>
     </div>
-    <div class="ng-fm-row">
+    <!-- <div class="ng-fm-row">
       <p>Legend plants: {{ result.legendPlants.toLocaleString() }}</p>
     </div>
     <div class="ng-fm-row">
@@ -17,7 +17,7 @@
     </div>
     <div class="ng-fm-row">
       <p>Common plants: {{ result.commonPlants.toLocaleString() }}</p>
-    </div>
+    </div> -->
     <div class="ng-fm-row">
       <p>Mother trees: {{ result.motherTrees.toLocaleString() }}</p>
     </div>
@@ -56,6 +56,15 @@
     </div>
     <div class="ng-fm-row">
       <p>Checking record: {{ result.needCheckingConvert }}</p>
+    </div>
+    <div class="ng-fm-row">
+      <p>Flipcoin Win Total Amount: {{ result.winTotalAmount.toLocaleString() }}</p>
+    </div>
+    <div class="ng-fm-row">
+      <p>Flipcoin Lose Total Amount: {{ result.loseTotalAmount.toLocaleString() }}</p>
+    </div>
+    <div class="ng-fm-row">
+      <p>Average betting amount: {{ result.bettingAmountAverage.toLocaleString() }}</p>
     </div>
   </div>
 </template>
