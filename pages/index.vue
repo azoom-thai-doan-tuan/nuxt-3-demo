@@ -27,6 +27,7 @@
     <div class="ng-fm-row">
       <p>Old lands: {{ result.oldLands.toLocaleString() }}</p>
     </div> -->
+    <br>
     <div class="ng-fm-row">
       <p>
         Remain Free tickets: {{ result.numberOfFreeTicket.toLocaleString() }}
