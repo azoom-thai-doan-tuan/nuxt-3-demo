@@ -78,10 +78,10 @@
     </div>
     <br>
     <div class="ng-fm-row">
-      <p>Curent convert: {{ result.currentConvert }}</p>
+      <p>Curent convert: {{ result.currentConvert.toLocaleString() }}</p>
     </div>
     <div class="ng-fm-row">
-      <p>Current convert amount: {{ result.currentConvertAmount }}</p>
+      <p>Current convert amount: {{ result.currentConvertAmount.toLocaleString() }}</p>
     </div>
     <div class="ng-fm-row">
       <p>Checking record: {{ result.needCheckingConvert }}</p>
