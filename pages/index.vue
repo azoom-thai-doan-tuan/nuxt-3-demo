@@ -76,6 +76,13 @@
     <div class="ng-fm-row">
       <p>LE treasury pool: {{ result.leTreasuryPool.toLocaleString() }}</p>
     </div>
+    <br>
+    <div class="ng-fm-row">
+      <p>Curent convert: {{ result.currentConvert }}</p>
+    </div>
+    <div class="ng-fm-row">
+      <p>Current convert amount: {{ result.currentConvertAmount }}</p>
+    </div>
     <div class="ng-fm-row">
       <p>Checking record: {{ result.needCheckingConvert }}</p>
     </div>
