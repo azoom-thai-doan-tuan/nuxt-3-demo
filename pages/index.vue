@@ -6,6 +6,9 @@
     <div class="ng-fm-row">
       <p>Number of plants: {{ result.numberOfPlants.toLocaleString() }}</p>
     </div>
+    <div class="ng-fm-row">
+      <p>Number of decorations: {{ result.decors.toLocaleString() }}</p>
+    </div>
     <!-- <div class="ng-fm-row">
       <p>Legend plants: {{ result.legendPlants.toLocaleString() }}</p>
     </div>
