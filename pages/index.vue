@@ -9,7 +9,8 @@
     <div class="ng-fm-row">
       <p>Number of decorations: {{ result.decors.toLocaleString() }}</p>
     </div>
-    <!-- <div class="ng-fm-row">
+    ,<br>
+    <div class="ng-fm-row">
       <p>Legend plants: {{ result.legendPlants.toLocaleString() }}</p>
     </div>
     <div class="ng-fm-row">
@@ -20,16 +21,16 @@
     </div>
     <div class="ng-fm-row">
       <p>Common plants: {{ result.commonPlants.toLocaleString() }}</p>
-    </div> -->
+    </div>
     <div class="ng-fm-row">
       <p>Mother trees: {{ result.motherTrees.toLocaleString() }}</p>
     </div>
-    <!-- <div class="ng-fm-row">
-      <p>Old plants: {{ result.oldPlants.toLocaleString() }}</p>
+    <div class="ng-fm-row">
+      <p>Fused plants: {{ result.fused.toLocaleString() }}</p>
     </div>
     <div class="ng-fm-row">
-      <p>Old lands: {{ result.oldLands.toLocaleString() }}</p>
-    </div> -->
+      <p>Omega lands: {{ result.omega.toLocaleString() }}</p>
+    </div>
     <br>
     <div class="ng-fm-row">
       <p>
