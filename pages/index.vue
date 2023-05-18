@@ -29,7 +29,7 @@
       <p>Fused plants: {{ result.fused.toLocaleString() }}</p>
     </div>
     <div class="ng-fm-row">
-      <p>Omega lands: {{ result.omega.toLocaleString() }}</p>
+      <p>Omega plants: {{ result.omega.toLocaleString() }}</p>
     </div>
     <br>
     <div class="ng-fm-row">
