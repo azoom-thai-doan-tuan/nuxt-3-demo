@@ -9,7 +9,15 @@
     <div class="ng-fm-row">
       <p>Number of decorations: {{ result.decors.toLocaleString() }}</p>
     </div>
-    ,<br>
+    <br />
+    <div class="ng-fm-row">
+      <p>Number of bidding slots: {{ result.bidding.toLocaleString() }}</p>
+    </div>
+    <div class="ng-fm-row">
+      <p>Number of ceiling bids: {{ result.highestBid.toLocaleString() }}</p>
+    </div>
+    <br />
+    
     <div class="ng-fm-row">
       <p>Legend plants: {{ result.legendPlants.toLocaleString() }}</p>
     </div>
@@ -31,7 +39,7 @@
     <div class="ng-fm-row">
       <p>Omega plants: {{ result.omega.toLocaleString() }}</p>
     </div>
-    <br>
+    <br />
     <div class="ng-fm-row">
       <p>
         Remain Free tickets: {{ result.numberOfFreeTicket.toLocaleString() }}
@@ -73,22 +81,25 @@
         {{ result.bettingAmountAverage.toLocaleString() }}
       </p>
     </div>
-    <br>
+    <br />
+    <div class="ng-fm-row">
+      <p>Curent convert: {{ result.currentConvert.toLocaleString() }}</p>
+    </div>
+    <div class="ng-fm-row">
+      <p>
+        Current convert amount:
+        {{ result.currentConvertAmount.toLocaleString() }}
+      </p>
+    </div>
+    <div class="ng-fm-row">
+      <p>Checking record: {{ result.needCheckingConvert }}</p>
+    </div>
+    <br />
     <div class="ng-fm-row">
       <p>LE Dev pool: {{ result.leDevPool.toLocaleString() }}</p>
     </div>
     <div class="ng-fm-row">
       <p>LE treasury pool: {{ result.leTreasuryPool.toLocaleString() }}</p>
-    </div>
-    <br>
-    <div class="ng-fm-row">
-      <p>Curent convert: {{ result.currentConvert.toLocaleString() }}</p>
-    </div>
-    <div class="ng-fm-row">
-      <p>Current convert amount: {{ result.currentConvertAmount.toLocaleString() }}</p>
-    </div>
-    <div class="ng-fm-row">
-      <p>Checking record: {{ result.needCheckingConvert }}</p>
     </div>
   </div>
 </template>
