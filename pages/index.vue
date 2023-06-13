@@ -12,6 +12,16 @@
       </div>
       <br />
       <div class="ng-fm-row">
+        <p>Chat all count: {{ result.chatAllCount.toLocaleString() }}</p>
+      </div>
+      <div class="ng-fm-row">
+        <p>Private chat count: {{ result.chatCount.toLocaleString() }}</p>
+      </div>
+      <div class="ng-fm-row">
+        <p>Rent ads count: {{ result.rentAdsCount.toLocaleString() }}</p>
+      </div>
+      <br />
+      <div class="ng-fm-row">
         <p>Number of bidding slots: {{ result.bidding.toLocaleString() }}</p>
       </div>
       <div class="ng-fm-row">
@@ -132,11 +142,3 @@ function submit() {
   console.log(success)
 }
 </script>
-<style lang="scss" scoped>
-.counter-page {
-  // display: flex;
-  // > .section {
-  //   margin-left: 100px;
-  // }
-}
-</style>
