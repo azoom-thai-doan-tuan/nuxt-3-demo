@@ -84,7 +84,7 @@
       <div class="ng-fm-row">
         <p>
           Flipcoin Win Total Amount:
-          {{ result.winTotalAmount.toLocaleString() }}
+          {{ result.winTotalAmount.toLocaleString() }} (not include 10% fee)
         </p>
       </div>
       <div class="ng-fm-row">
@@ -114,8 +114,9 @@
       </div>
       <div class="ng-fm-row">
         <p>
-          Crow hunting deposit (not include 5% fee):
-          {{ result.crowHuntAmount[0].income.toLocaleString() }}
+          Crow hunting deposit:
+          {{ result.crowHuntAmount[0].income.toLocaleString() }} (not include 5%
+          fee)
         </p>
       </div>
       <div class="ng-fm-row">
