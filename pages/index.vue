@@ -115,13 +115,13 @@
       <div class="ng-fm-row">
         <p>
           Crow hunting income:
-          {{ result.income.toLocaleString() }}
+          {{ result.crowHuntAmount[0].income.toLocaleString() }}
         </p>
       </div>
       <div class="ng-fm-row">
         <p>
           Crow hunting outcome:
-          {{ result.outcome.toLocaleString() }}
+          {{ result.crowHuntAmount[0].outcome.toLocaleString() }}
         </p>
       </div>
     </div>
