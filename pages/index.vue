@@ -71,6 +71,7 @@
         </p>
       </div>
       <br />
+
       <div class="ng-fm-row">
         <p>Flipcoin Win: {{ result.numberOfBettingWin.toLocaleString() }}</p>
       </div>
@@ -99,6 +100,30 @@
         </p>
       </div>
       <br />
+      <div class="ng-fm-row">
+        <p>
+          Crow hunting throw 5:
+          {{ result.crowHunt5.toLocaleString() }}
+        </p>
+      </div>
+      <div class="ng-fm-row">
+        <p>
+          Crow hunting throw 10:
+          {{ result.crowHunt10.toLocaleString() }}
+        </p>
+      </div>
+      <div class="ng-fm-row">
+        <p>
+          Crow hunting income:
+          {{ result.income.toLocaleString() }}
+        </p>
+      </div>
+      <div class="ng-fm-row">
+        <p>
+          Crow hunting outcome:
+          {{ result.outcome.toLocaleString() }}
+        </p>
+      </div>
     </div>
     <div class="section">
       <div class="ng-fm-row">
