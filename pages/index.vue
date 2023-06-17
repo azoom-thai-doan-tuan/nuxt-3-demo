@@ -124,6 +124,7 @@
           {{ result.crowHuntAmount[0].outcome.toLocaleString() }}
         </p>
       </div>
+      <br />
     </div>
     <div class="section">
       <div class="ng-fm-row">
