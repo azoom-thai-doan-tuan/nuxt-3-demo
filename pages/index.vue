@@ -84,7 +84,7 @@
       <div class="ng-fm-row">
         <p>
           Flipcoin Win Total Amount:
-          {{ result.winTotalAmount.toLocaleString() }} (not include 10% fee)
+          {{ result.winTotalAmount.toLocaleString() }} (including 10% fee)
         </p>
       </div>
       <div class="ng-fm-row">
