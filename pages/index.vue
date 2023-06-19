@@ -97,7 +97,7 @@
         <p>
           Flipcoin Big Bet Count:
           {{ totalFlipcoinBigBet }} times -
-          {{ totolBigFlipCoinAmount.toLocaleString() }} LE ({{
+          {{ aveBigBet.toLocaleString() }} LE ({{
             bigFlipCoinWin
           }}/{{ totalFlipcoinBigBet }}
           wins)
@@ -202,4 +202,5 @@ const totolBigFlipCoinAmount = result.bigBetFlipcoin.reduce(
   (acc, cur) => (acc += cur.bettingAmount),
   0
 )
+const aveBigBet = Math.round(totolBigFlipCoinAmount / totalFlipcoinBigBet)
 </script>
