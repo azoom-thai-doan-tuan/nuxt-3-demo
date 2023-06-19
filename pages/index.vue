@@ -132,7 +132,7 @@
             Math.round(
               result.crowHuntAmount[0].incometo /
                 (result.crowHunt5 + result.crowHunt10)
-            ).LocaleString()
+            )
           }}
         </p>
       </div>
