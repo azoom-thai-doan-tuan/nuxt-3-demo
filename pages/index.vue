@@ -125,6 +125,17 @@
           {{ result.crowHuntAmount[0].outcome.toLocaleString() }}
         </p>
       </div>
+      <div class="ng-fm-row">
+        <p>
+          Average betting amount:
+          {{
+            Math.round(
+              result.crowHuntAmount[0].incometo /
+                (result.crowHunt5 + result.crowHunt10)
+            ).LocaleString()
+          }}
+        </p>
+      </div>
       <br />
     </div>
     <div class="section">
