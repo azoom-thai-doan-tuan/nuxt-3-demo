@@ -95,6 +95,16 @@
       </div>
       <div class="ng-fm-row">
         <p>
+          Flipcoin Big Bet Count:
+          {{ totalFlipcoinBigBet }} times -
+          {{ totolBigFlipCoinAmount.toLocaleString() }} LE ({{
+            bigFlipCoinWin
+          }}/{{ totalFlipcoinBigBet }}
+          wins)
+        </p>
+      </div>
+      <div class="ng-fm-row">
+        <p>
           Average betting amount:
           {{ result.bettingAmountAverage.toLocaleString() }}
         </p>
@@ -179,4 +189,17 @@ function submit() {
   const { success } = formValid.safeParse(formData)
   console.log(success)
 }
+
+const totalFlipcoinBigBet = result.bigBetFlipcoin.reduce(
+  (acc, cur) => (acc += cur.times),
+  0
+)
+const bigFlipCoinWin = result.bigBetFlipcoin.reduce(
+  (acc, cur) => (acc += cur.winTimes),
+  0
+)
+const totolBigFlipCoinAmount = result.bigBetFlipcoin.reduce(
+  (acc, cur) => (acc += cur.bettingAmount),
+  0
+)
 </script>
