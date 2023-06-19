@@ -130,7 +130,7 @@
           Average betting amount:
           {{
             Math.round(
-              result.crowHuntAmount[0].incometo /
+              result.crowHuntAmount[0].income /
                 (result.crowHunt5 + result.crowHunt10)
             )
           }}
