@@ -2,7 +2,11 @@
   <div class="counter-page">
     <div>
       <div class="ng-fm-row">
-        <p>Users: {{ result.users.toLocaleString() }}</p>
+        <p>
+          Users: {{ result.users.toLocaleString() }} ({{
+            result.activeUsers.toLocaleString()
+          }})
+        </p>
       </div>
       <div class="ng-fm-row">
         <p>Number of plants: {{ result.numberOfPlants.toLocaleString() }}</p>
@@ -45,13 +49,16 @@
         <p>Mother trees: {{ result.motherTrees.toLocaleString() }}</p>
       </div>
       <div class="ng-fm-row">
-        <p>Fused plants: {{ result.fused.toLocaleString() }}</p>
+        <p>
+          Fused plants: {{ result.fused.toLocaleString() }} -
+          {{ result.fused2.toLocaleString() }}
+        </p>
       </div>
       <div class="ng-fm-row">
-        <p>Mythic 1 plants: {{ result.omega1.toLocaleString() }}</p>
-      </div>
-      <div class="ng-fm-row">
-        <p>Mythic 2 plants: {{ result.omega2.toLocaleString() }}</p>
+        <p>
+          Mythic plants: {{ result.omega1.toLocaleString() }} -
+          {{ result.omega2.toLocaleString() }}
+        </p>
       </div>
       <br />
     </div>
@@ -96,10 +103,8 @@
       <div class="ng-fm-row">
         <p>
           Flipcoin Big Bet Count:
-          {{ totalFlipcoinBigBet }} times -
-          {{ aveBigBet.toLocaleString() }} LE ({{
-            bigFlipCoinWin
-          }}/{{ totalFlipcoinBigBet }}
+          {{ totalFlipcoinBigBet }} times - {{ aveBigBet.toLocaleString() }} LE
+          ({{ bigFlipCoinWin }}/{{ totalFlipcoinBigBet }}
           wins)
         </p>
       </div>
