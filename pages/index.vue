@@ -3,9 +3,13 @@
     <div>
       <div class="ng-fm-row">
         <p>
-          Users: {{ result.users.toLocaleString() }} ({{
-            result.activeUsers.toLocaleString()
-          }})
+          Users: {{ result.users.toLocaleString() }}
+          {{
+            [
+              ...result.activeUsersHistoy.map((i) => i.activeUsers),
+              result.activeUsers,
+            ]
+          }}
         </p>
       </div>
       <div class="ng-fm-row">
