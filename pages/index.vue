@@ -133,15 +133,15 @@
       </div>
       <div class="ng-fm-row">
         <p>
-          Crow hunting deposit:
-          {{ result.crowHuntAmount[0].income.toLocaleString() }} (not include 5%
-          fee)
+          Crow hunting reward:
+          {{ result.crowHuntAmount[0].outcome.toLocaleString() }}
         </p>
       </div>
       <div class="ng-fm-row">
         <p>
-          Crow hunting reward:
-          {{ result.crowHuntAmount[0].outcome.toLocaleString() }}
+          Crow hunting deposit:
+          {{ result.crowHuntAmount[0].income.toLocaleString() }} (not include 5%
+          fee)
         </p>
       </div>
       <div class="ng-fm-row">
