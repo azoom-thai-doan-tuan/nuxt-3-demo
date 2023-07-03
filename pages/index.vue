@@ -6,7 +6,7 @@
           Users: {{ result.users.toLocaleString() }}
           {{
             [
-              ...result.activeUsersHistoy.map((i) => i.activeUsers),
+              ...result.activeUsersHistoy.map((i) => i.activeUsers).reverse(),
               result.activeUsers,
             ]
           }}
