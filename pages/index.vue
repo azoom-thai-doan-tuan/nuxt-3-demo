@@ -6,8 +6,10 @@
           Users: {{ result.users.toLocaleString() }}
           {{
             [
-              ...result.activeUsersHistoy.map((i) => i.activeUsers).reverse(),
-              result.activeUsers,
+              ...result.activeUsersHistoy
+                .map((i) => i.activeUsers)
+                .filter((i) => i < 100000)
+                .reverse(),
             ]
           }}
         </p>
