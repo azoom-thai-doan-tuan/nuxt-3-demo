@@ -63,7 +63,8 @@
       <div class="ng-fm-row">
         <p>
           Mythic plants: {{ result.omega1.toLocaleString() }} -
-          {{ result.omega2.toLocaleString() }}
+          {{ result.omega2.toLocaleString() }} -
+          {{ result.omega3.toLocaleString() }}
         </p>
       </div>
       <br />
