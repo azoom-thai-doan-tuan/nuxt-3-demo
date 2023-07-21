@@ -122,6 +122,7 @@
         </p>
       </div>
       <br />
+
       <div class="ng-fm-row">
         <p>
           Crow hunting throw 5:
@@ -156,6 +157,20 @@
                 (result.crowHunt5 + result.crowHunt10)
             )
           }}
+        </p>
+      </div>
+      <br />
+
+      <div class="ng-fm-row">
+        <p>
+          DOND reward:
+          {{ result.dondOutcome.toLocaleString() }}
+        </p>
+      </div>
+      <div class="ng-fm-row">
+        <p>
+          DOND deposit:
+          {{ result.dondIncome.toLocaleString() }}
         </p>
       </div>
       <br />
