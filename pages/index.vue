@@ -73,7 +73,13 @@
       <div class="ng-fm-row">
         <p>
           Used crow king tools:
-          {{ [...result.chaseCrowKingTools.map((i) => i.sumTools)] }}
+          {{
+            result.chaseCrowKingTools
+              .sort(function (a, b) {
+                return a._id - b._id
+              })
+              .map((i) => i.sumTools)
+          }}
         </p>
       </div>
     </div>
