@@ -72,6 +72,15 @@
     <div class="section">
       <div class="ng-fm-row">
         <p>
+          Used crow king tools:
+          {{ [...result.chaseCrowKingTools.map((i) => i.sumTools)] }}
+        </p>
+      </div>
+    </div>
+    <br />
+    <div class="section">
+      <div class="ng-fm-row">
+        <p>
           Remain Free tickets: {{ result.numberOfFreeTicket.toLocaleString() }}
         </p>
       </div>
