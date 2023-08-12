@@ -79,6 +79,7 @@
                 return a._id - b._id
               })
               .map((i) => i.sumTools)
+              .slice(-3)
           }}
         </p>
       </div>
