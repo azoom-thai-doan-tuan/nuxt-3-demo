@@ -61,8 +61,8 @@
         <p>
           Mythic plants: {{ result.omega1.toLocaleString() }} -
           {{ result.omega2.toLocaleString() }} -
-          {{ result.omega3.toLocaleString() }} - {{
-          result.omega4.toLocaleString() }
+          {{ result.omega3.toLocaleString() }} -
+          {{ result.omega4.toLocaleString() }}
         </p>
       </div>
       <br />
