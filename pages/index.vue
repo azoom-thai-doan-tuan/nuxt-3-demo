@@ -34,9 +34,6 @@
       <div class="ng-fm-row">
         <p>Number of bidding slots: {{ result.bidding.toLocaleString() }}</p>
       </div>
-      <div class="ng-fm-row">
-        <p>Number of ceiling bids: {{ result.highestBid.toLocaleString() }}</p>
-      </div>
       <br />
 
       <div class="ng-fm-row">
@@ -64,7 +61,8 @@
         <p>
           Mythic plants: {{ result.omega1.toLocaleString() }} -
           {{ result.omega2.toLocaleString() }} -
-          {{ result.omega3.toLocaleString() }}
+          {{ result.omega3.toLocaleString() }} - {{
+          result.omega4.toLocaleString() }
         </p>
       </div>
       <br />
