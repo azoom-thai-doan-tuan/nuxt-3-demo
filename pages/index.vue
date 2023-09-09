@@ -188,6 +188,21 @@
         </p>
       </div>
       <br />
+      <br />
+
+      <div class="ng-fm-row">
+        <p>
+          King Gambit reward:
+          {{ result.kingGambitDeposit.toLocaleString() }}
+        </p>
+      </div>
+      <div class="ng-fm-row">
+        <p>
+          King Gambit deposit:
+          {{ result.kingGambitReward.toLocaleString() }}
+        </p>
+      </div>
+      <br />
     </div>
     <div class="section">
       <div class="ng-fm-row">
