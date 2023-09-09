@@ -190,14 +190,12 @@
       <br />
       <div class="ng-fm-row">
         <p>
-          King Gambit reward:
-          {{ result.kingGambitDeposit.toLocaleString() }}
-        </p>
-      </div>
-      <div class="ng-fm-row">
-        <p>
-          King Gambit deposit:
-          {{ result.kingGambitReward.toLocaleString() }}
+          King Gambit Deposit:
+          {{
+            Math.round(
+              ((result.kingGambitDeposit - result.kingGambitReward) / 0.05) * 2
+            ).toLocaleString()
+          }}
         </p>
       </div>
       <br />
