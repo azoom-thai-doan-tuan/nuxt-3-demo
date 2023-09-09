@@ -188,8 +188,6 @@
         </p>
       </div>
       <br />
-      <br />
-
       <div class="ng-fm-row">
         <p>
           King Gambit reward:
