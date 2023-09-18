@@ -20,6 +20,9 @@
       <div class="ng-fm-row">
         <p>Number of decorations: {{ result.decors.toLocaleString() }}</p>
       </div>
+      <div class="ng-fm-row">
+        <p>Number of Pets: {{ result.pets.toLocaleString() }}</p>
+      </div>
       <br />
       <div class="ng-fm-row">
         <p>Chat all count: {{ result.chatAllCount.toLocaleString() }}</p>
