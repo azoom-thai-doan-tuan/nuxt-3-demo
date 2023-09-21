@@ -22,8 +22,11 @@
       </div>
       <div class="ng-fm-row">
         <p>
-          Number of Pets: {{ result.pets.toLocaleString() }} ({{ result.mythicPets }} -
-          {{ result.epicPets }} - {{ result.rarePets }} - {{ result.commonPets }})
+          Number of Pets: {{ result.pets.toLocaleString() }} ({{
+            result.mythicPets
+          }}
+          - {{ legendaryPets }} - {{ result.epicPets }} - {{ result.rarePets }} -
+          {{ result.commonPets }})
         </p>
       </div>
       <br />
@@ -261,4 +264,8 @@ const totolBigFlipCoinAmount = result.bigBetFlipcoin.reduce(
   0
 )
 const aveBigBet = Math.round(totolBigFlipCoinAmount / totalFlipcoinBigBet)
+
+const legendaryPets =
+  result.pets -
+  (result.mythicPets + result.commonPets + result.rarePets + result.epicPets)
 </script>
