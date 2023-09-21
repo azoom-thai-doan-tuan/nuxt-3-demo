@@ -21,7 +21,10 @@
         <p>Number of decorations: {{ result.decors.toLocaleString() }}</p>
       </div>
       <div class="ng-fm-row">
-        <p>Number of Pets: {{ result.pets.toLocaleString() }}</p>
+        <p>
+          Number of Pets: {{ result.pets.toLocaleString() }} ({{ result.mythicPets }} -
+          {{ result.epicPets }} - {{ result.rarePets }} - {{ result.commonPets }})
+        </p>
       </div>
       <br />
       <div class="ng-fm-row">
