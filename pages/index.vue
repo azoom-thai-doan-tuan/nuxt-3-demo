@@ -25,8 +25,8 @@
           Number of Pets: {{ result.pets.toLocaleString() }} ({{
             result.mythicPets
           }}
-          - {{ legendaryPets }} - {{ result.epicPets }} - {{ result.rarePets }} -
-          {{ result.commonPets }})
+          - {{ legendaryPets }} - {{ result.epicPets }} -
+          {{ result.rarePets }} - {{ result.commonPets }})
         </p>
       </div>
       <br />
@@ -142,6 +142,20 @@
         <p>
           Average betting amount:
           {{ result.bettingAmountAverage.toLocaleString() }}
+        </p>
+      </div>
+      <br />
+
+      <div class="ng-fm-row">
+        <p>
+          Flipcoin 2 deposit:
+          {{ result.totalBettingFlip2.toLocaleString() }}
+        </p>
+      </div>
+      <div class="ng-fm-row">
+        <p>
+          Flipcoin 2 reward:
+          {{ result.totalWinFlip2.toLocaleString() }}
         </p>
       </div>
       <br />
