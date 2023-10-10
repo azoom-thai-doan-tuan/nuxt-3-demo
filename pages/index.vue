@@ -244,12 +244,18 @@
         <p>LE treasury pool: {{ result.leTreasuryPool.toLocaleString() }}</p>
       </div>
     </div>
+    <Button @click="confirm2()" label="Close Bridge !!!" size="large" />
+    <ConfirmDialog></ConfirmDialog>
   </div>
 </template>
 
 <script setup>
 import { formValid } from '../schema/form'
+import { useConfirm } from 'primevue/useconfirm'
+import { useToast } from 'primevue/usetoast'
 
+const confirm = useConfirm()
+const toast = useToast()
 const { data } = await useFetch('https://api.plantvsundead.com/analytics')
 const result = data._value
 
@@ -282,4 +288,35 @@ const aveBigBet = Math.round(totolBigFlipCoinAmount / totalFlipcoinBigBet)
 const legendaryPets =
   result.pets -
   (result.mythicPets + result.commonPets + result.rarePets + result.epicPets)
+
+const confirm2 = () => {
+  confirm.require({
+    message: 'Do you want to close bridge?',
+    header: 'Confirmation',
+    icon: 'pi pi-info-circle',
+    acceptClass: 'p-button-danger',
+    accept: async () => {
+      toast.add({
+        severity: 'info',
+        summary: 'Confirmed',
+        detail: 'Confirm close',
+        life: 3000,
+      })
+      await useFetch('https://api.plantvsundead.com/close-bridge', {
+        method: 'post',
+        body: {
+          checkpass: 'pvu-tracking',
+        },
+      })
+    },
+    reject: () => {
+      toast.add({
+        severity: 'error',
+        summary: 'Rejected',
+        detail: 'You have rejected',
+        life: 3000,
+      })
+    },
+  })
+}
 </script>
